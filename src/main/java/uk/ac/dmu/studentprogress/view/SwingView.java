@@ -1,5 +1,7 @@
 package uk.ac.dmu.studentprogress.view;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import uk.ac.dmu.studentprogress.view.menu.MenuBar;
 import uk.ac.dmu.studentprogress.view.tab.CreateProfileTab;
 import uk.ac.dmu.studentprogress.view.tab.InputMarksTab;
@@ -17,13 +19,18 @@ import java.io.StringWriter;
 
 /**
  * Represents the view in the 'model-view-controller' pattern. The view is a
- * visual representation  * of the program in the form of a graphical user
- * interface. It is manipulated by the controller and  * uses data from the
- * model. It primarily generates the user interface and does not deal with the
- * logic or functions of the program itself but instead invokes such behaviour
- * from the controller.
+ * visual representation of the program in the form of a graphical user
+ * interface. It is manipulated by the controller and uses data from the  model.
+ * It primarily generates the user interface and does not deal with the logic or
+ * functions of the program itself but instead invokes such behaviour from the
+ * controller.
  */
 public final class SwingView implements View {
+	/**
+	 * The logger for this class.
+	 */
+	private static final Logger logger = LoggerFactory.getLogger(SwingView.class);
+
 	/**
 	 * The main frame.
 	 */
@@ -96,7 +103,7 @@ public final class SwingView implements View {
 			/* cannot occur */
 		}
 
-		t.printStackTrace();
+		logger.error("An exception occurred:", t);
 		displayError(message.toString(), "An exception occurred: ");
 	}
 
@@ -107,7 +114,7 @@ public final class SwingView implements View {
 	 */
 	@Override
 	public void displayError(Throwable t, String message) {
-		t.printStackTrace();
+		logger.error("An exception occurred:", t);
 		displayError(message);
 	}
 

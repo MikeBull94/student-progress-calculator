@@ -16,7 +16,7 @@ Run `gradle` to build the application.
 
 The following Java libraries are used by the application:
 
-* [Google Gson][gson]
+* [Google Guava][guava]
 * [SLF4J][slf4j]
 
 ## Screenshots
@@ -35,5 +35,5 @@ The following Java libraries are used by the application:
 [gradle]: http://www.gradle.org/
 [oracle]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [openjdk]: http://openjdk.java.net/
-[gson]: https://code.google.com/p/google-gson/
+[guava]: https://code.google.com/p/guava-libraries/
 [slf4j]: http://www.slf4j.org/
