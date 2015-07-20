@@ -8,9 +8,9 @@ The application has been developed using the [Model–view–controller][mvc] pa
 
 ## Building
 
-[Gradle][gradle] is used as the build system. Java 8 ([Oracle Java][oracle]) or [OpenJDK][openjdk] on Linux is required.
+[Gradle][gradle] is used as the build system.
 
-Run `gradle` to build the application.
+Run `gradle` to build the application and run the unit tests.
 
 ## Dependencies
 
@@ -33,7 +33,5 @@ The following Java libraries are used by the application:
 
 [mvc]: http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
 [gradle]: http://www.gradle.org/
-[oracle]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
-[openjdk]: http://openjdk.java.net/
 [guava]: https://code.google.com/p/guava-libraries/
 [slf4j]: http://www.slf4j.org/
